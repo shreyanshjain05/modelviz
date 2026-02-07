@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <a href="https://shreyanshjain05.github.io/modelviz/">Documentation</a> •
   <a href="#-features">Features</a> •
   <a href="#-installation">Installation</a> •
   <a href="#-quick-start">Quick Start</a> •
