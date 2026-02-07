@@ -391,4 +391,6 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 <p align="center">
   Made with ❤️ for the deep learning community
+  <br><br>
+  ⭐ Star this repo if you find it useful!
 </p>
