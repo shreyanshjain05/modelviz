@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#0f172a"/>
+  
+  <!-- 3D Cubes representing neural network layers -->
+  <!-- Cube 1 (back) -->
+  <g transform="translate(40, 60)">
+    <polygon points="0,20 30,0 60,20 30,40" fill="#6366f1" opacity="0.8"/>
+    <polygon points="0,20 0,50 30,70 30,40" fill="#4f46e5" opacity="0.8"/>
+    <polygon points="30,40 30,70 60,50 60,20" fill="#818cf8" opacity="0.8"/>
+  </g>
+  
+  <!-- Cube 2 (middle) -->
+  <g transform="translate(70, 80)">
+    <polygon points="0,20 30,0 60,20 30,40" fill="#06b6d4" opacity="0.9"/>
+    <polygon points="0,20 0,50 30,70 30,40" fill="#0891b2" opacity="0.9"/>
+    <polygon points="30,40 30,70 60,50 60,20" fill="#22d3ee" opacity="0.9"/>
+  </g>
+  
+  <!-- Cube 3 (front) -->
+  <g transform="translate(100, 100)">
+    <polygon points="0,20 30,0 60,20 30,40" fill="#10b981" opacity="1"/>
+    <polygon points="0,20 0,50 30,70 30,40" fill="#059669" opacity="1"/>
+    <polygon points="30,40 30,70 60,50 60,20" fill="#34d399" opacity="1"/>
+  </g>
+  
+  <!-- Connecting lines -->
+  <line x1="70" y1="95" x2="90" y2="110" stroke="#f59e0b" stroke-width="2" opacity="0.8"/>
+  <line x1="100" y1="115" x2="120" y2="130" stroke="#f59e0b" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Glowing spheres (activations) -->
+  <circle cx="80" cy="103" r="6" fill="#f59e0b">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="110" cy="123" r="6" fill="#f59e0b">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <!-- Text -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">modelviz</text>
+</svg>
