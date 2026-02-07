@@ -1,0 +1,21 @@
+digraph neural_network {
+	graph [bgcolor=transparent fontname="Helvetica Neue, Helvetica, Arial, sans-serif" fontsize=14 nodesep=0.5 pad=0.5 rankdir=TB ranksep=0.8 splines=ortho]
+	node [fontname="Helvetica Neue, Helvetica, Arial, sans-serif" fontsize=11 margin="0.2,0.1"]
+	edge [arrowsize=0.8 color="#94a3b8" penwidth=1.5]
+	fontsize=16 fontweight=bold label="Simple CNN for MNIST" labelloc=t
+	0 [label="Conv2d + ReLU\nOutput: (1, 32, 28, 28)\nParams: 320" fillcolor="#6366f1" fontcolor="#ffffff" height=0.6 peripheries=2 shape=box style="filled,rounded" width=2.2]
+	1 [label="MaxPool2d\nOutput: (1, 32, 14, 14)" fillcolor="#06b6d4" fontcolor="#ffffff" height=0.4 peripheries=1 shape=box style="filled,rounded" width=1.5]
+	2 [label="Conv2d + ReLU\nOutput: (1, 64, 14, 14)\nParams: 18.5K" fillcolor="#6366f1" fontcolor="#ffffff" height=0.6 peripheries=2 shape=box style="filled,rounded" width=2.2]
+	3 [label="MaxPool2d\nOutput: (1, 64, 7, 7)" fillcolor="#06b6d4" fontcolor="#ffffff" height=0.4 peripheries=1 shape=box style="filled,rounded" width=1.5]
+	4 [label="Flatten\nOutput: (1, 3136)" fillcolor="#ec4899" fontcolor="#ffffff" height=0.4 peripheries=1 shape=trapezium style="filled,rounded" width=1.5]
+	5 [label="Linear + ReLU\nOutput: (1, 128)\nParams: 401.5K" fillcolor="#8b5cf6" fontcolor="#ffffff" height=0.5 peripheries=2 shape=ellipse style="filled,rounded" width=2.2]
+	6 [label="Dropout\nOutput: (1, 128)" fillcolor="#ef4444" fontcolor="#ffffff" height=0.4 peripheries=1 shape=box style="filled,dashed" width=1.2]
+	7 [label="Linear\nOutput: (1, 10)\nParams: 1.3K" fillcolor="#8b5cf6" fontcolor="#ffffff" height=0.5 peripheries=1 shape=ellipse style="filled,rounded" width=1.8]
+	0 -> 1
+	1 -> 2
+	2 -> 3
+	3 -> 4
+	4 -> 5
+	5 -> 6
+	6 -> 7
+}
