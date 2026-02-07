@@ -2,7 +2,7 @@
   <img src="docs/assets/logo.svg" alt="modelviz" width="180"/>
 </p>
 
-<h1 align="center">modelviz</h1>
+<h1 align="center">modelviz-ai</h1>
 
 <p align="center">
   <strong>Framework-agnostic neural network visualization for Jupyter notebooks</strong>
@@ -58,16 +58,16 @@ Each layer type has a distinct, meaningful 3D representation:
 
 ```bash
 # Basic installation
-pip install modelviz
+pip install modelviz-ai
 
 # With PyTorch support
-pip install modelviz[torch]
+pip install modelviz-ai[torch]
 
 # With TensorFlow support
-pip install modelviz[tf]
+pip install modelviz-ai[tf]
 
 # All frameworks + development tools
-pip install modelviz[all,dev]
+pip install modelviz-ai[all,dev]
 ```
 
 ### From Source

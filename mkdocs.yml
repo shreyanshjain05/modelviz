@@ -1,6 +1,6 @@
 # MkDocs configuration for documentation site
 
-site_name: modelviz
+site_name: modelviz-ai
 site_description: Framework-agnostic neural network visualization
 repo_url: https://github.com/shreyanshjain05/modelviz
 repo_name: shreyanshjain05/modelviz

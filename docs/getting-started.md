@@ -12,20 +12,20 @@ This guide will help you install modelviz and create your first neural network v
 ### Install from PyPI
 
 ```bash
-pip install modelviz
+pip install modelviz-ai
 ```
 
 ### Install with framework support
 
 ```bash
 # For PyTorch models
-pip install modelviz[torch]
+pip install modelviz-ai[torch]
 
 # For TensorFlow/Keras models
-pip install modelviz[tf]
+pip install modelviz-ai[tf]
 
 # For both frameworks
-pip install modelviz[torch,tf]
+pip install modelviz-ai[torch,tf]
 ```
 
 ### System dependency (for 2D diagrams only)
