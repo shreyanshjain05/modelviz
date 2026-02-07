@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="283pt" height="994pt" viewBox="0.00 0.00 283.00 994.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 957.94)">
+<title>neural_network</title>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-903.54" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16.00">CNN Architecture</text>
+<!-- 0 -->
+<g id="node1" class="node">
+<title>0</title>
+<path fill="#6366f1" stroke="black" d="M181.61,-890.74C181.61,-890.74 29.36,-890.74 29.36,-890.74 23.36,-890.74 17.36,-884.74 17.36,-878.74 17.36,-878.74 17.36,-848.74 17.36,-848.74 17.36,-842.74 23.36,-836.74 29.36,-836.74 29.36,-836.74 181.61,-836.74 181.61,-836.74 187.61,-836.74 193.61,-842.74 193.61,-848.74 193.61,-848.74 193.61,-878.74 193.61,-878.74 193.61,-884.74 187.61,-890.74 181.61,-890.74"/>
+<path fill="none" stroke="black" d="M185.61,-894.74C185.61,-894.74 25.36,-894.74 25.36,-894.74 19.36,-894.74 13.36,-888.74 13.36,-882.74 13.36,-882.74 13.36,-844.74 13.36,-844.74 13.36,-838.74 19.36,-832.74 25.36,-832.74 25.36,-832.74 185.61,-832.74 185.61,-832.74 191.61,-832.74 197.61,-838.74 197.61,-844.74 197.61,-844.74 197.61,-882.74 197.61,-882.74 197.61,-888.74 191.61,-894.74 185.61,-894.74"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-873.64" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Conv2d + BatchNorm2d + ReLU</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-860.44" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 64, 32, 32)</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-847.24" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Params: 1.9K</text>
+</g>
+<!-- 1 -->
+<g id="node2" class="node">
+<title>1</title>
+<path fill="#06b6d4" stroke="black" d="M157.23,-774.74C157.23,-774.74 53.74,-774.74 53.74,-774.74 47.74,-774.74 41.74,-768.74 41.74,-762.74 41.74,-762.74 41.74,-745.94 41.74,-745.94 41.74,-739.94 47.74,-733.94 53.74,-733.94 53.74,-733.94 157.23,-733.94 157.23,-733.94 163.23,-733.94 169.23,-739.94 169.23,-745.94 169.23,-745.94 169.23,-762.74 169.23,-762.74 169.23,-768.74 163.23,-774.74 157.23,-774.74"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-757.64" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">MaxPool2d</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-744.44" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 64, 16, 16)</text>
+</g>
+<!-- 0&#45;&gt;1 -->
+<g id="edge1" class="edge">
+<title>0-&gt;1</title>
+<path fill="none" stroke="#94a3b8" stroke-width="1.5" d="M105.49,-832.39C105.49,-832.39 105.49,-785.24 105.49,-785.24"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" stroke-width="1.5" points="108.29,-785.24 105.49,-777.24 102.69,-785.24 108.29,-785.24"/>
+</g>
+<!-- 2 -->
+<g id="node3" class="node">
+<title>2</title>
+<path fill="#6366f1" stroke="black" d="M181.61,-671.94C181.61,-671.94 29.36,-671.94 29.36,-671.94 23.36,-671.94 17.36,-665.94 17.36,-659.94 17.36,-659.94 17.36,-629.94 17.36,-629.94 17.36,-623.94 23.36,-617.94 29.36,-617.94 29.36,-617.94 181.61,-617.94 181.61,-617.94 187.61,-617.94 193.61,-623.94 193.61,-629.94 193.61,-629.94 193.61,-659.94 193.61,-659.94 193.61,-665.94 187.61,-671.94 181.61,-671.94"/>
+<path fill="none" stroke="black" d="M185.61,-675.94C185.61,-675.94 25.36,-675.94 25.36,-675.94 19.36,-675.94 13.36,-669.94 13.36,-663.94 13.36,-663.94 13.36,-625.94 13.36,-625.94 13.36,-619.94 19.36,-613.94 25.36,-613.94 25.36,-613.94 185.61,-613.94 185.61,-613.94 191.61,-613.94 197.61,-619.94 197.61,-625.94 197.61,-625.94 197.61,-663.94 197.61,-663.94 197.61,-669.94 191.61,-675.94 185.61,-675.94"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-654.84" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Conv2d + BatchNorm2d + ReLU</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-641.64" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 128, 16, 16)</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-628.44" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Params: 74.1K</text>
+</g>
+<!-- 1&#45;&gt;2 -->
+<g id="edge2" class="edge">
+<title>1-&gt;2</title>
+<path fill="none" stroke="#94a3b8" stroke-width="1.5" d="M105.49,-733.5C105.49,-733.5 105.49,-686.31 105.49,-686.31"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" stroke-width="1.5" points="108.29,-686.31 105.49,-678.31 102.69,-686.31 108.29,-686.31"/>
+</g>
+<!-- 3 -->
+<g id="node4" class="node">
+<title>3</title>
+<path fill="#06b6d4" stroke="black" d="M154.48,-555.94C154.48,-555.94 56.49,-555.94 56.49,-555.94 50.49,-555.94 44.49,-549.94 44.49,-543.94 44.49,-543.94 44.49,-527.14 44.49,-527.14 44.49,-521.14 50.49,-515.14 56.49,-515.14 56.49,-515.14 154.48,-515.14 154.48,-515.14 160.48,-515.14 166.48,-521.14 166.48,-527.14 166.48,-527.14 166.48,-543.94 166.48,-543.94 166.48,-549.94 160.48,-555.94 154.48,-555.94"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-538.84" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">MaxPool2d</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-525.64" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 128, 8, 8)</text>
+</g>
+<!-- 2&#45;&gt;3 -->
+<g id="edge3" class="edge">
+<title>2-&gt;3</title>
+<path fill="none" stroke="#94a3b8" stroke-width="1.5" d="M105.49,-613.59C105.49,-613.59 105.49,-566.44 105.49,-566.44"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" stroke-width="1.5" points="108.29,-566.44 105.49,-558.44 102.69,-566.44 108.29,-566.44"/>
+</g>
+<!-- 4 -->
+<g id="node5" class="node">
+<title>4</title>
+<path fill="#ec4899" stroke="black" d="M155.1,-457.14C155.1,-457.14 55.88,-457.14 55.88,-457.14 49.88,-457.14 41.04,-451.85 38.2,-446.57 38.2,-446.57 5.68,-386.1 5.68,-386.1 2.84,-380.82 6,-375.54 12,-375.54 12,-375.54 198.98,-375.54 198.98,-375.54 204.98,-375.54 208.14,-380.82 205.29,-386.1 205.29,-386.1 172.78,-446.57 172.78,-446.57 169.94,-451.85 161.1,-457.14 155.1,-457.14"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-419.64" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Flatten</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-406.44" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 8192)</text>
+</g>
+<!-- 3&#45;&gt;4 -->
+<g id="edge4" class="edge">
+<title>3-&gt;4</title>
+<path fill="none" stroke="#94a3b8" stroke-width="1.5" d="M105.49,-514.77C105.49,-514.77 105.49,-467.86 105.49,-467.86"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" stroke-width="1.5" points="108.29,-467.86 105.49,-459.86 102.69,-467.86 108.29,-467.86"/>
+</g>
+<!-- 5 -->
+<g id="node6" class="node">
+<title>5</title>
+<ellipse fill="#8b5cf6" stroke="black" cx="105.49" cy="-275.35" rx="79.2" ry="38.18"/>
+<ellipse fill="none" stroke="black" cx="105.49" cy="-275.35" rx="83.2" ry="42.18"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-285.25" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Linear + ReLU</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-272.05" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 256)</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-258.85" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Params: 2.10M</text>
+</g>
+<!-- 4&#45;&gt;5 -->
+<g id="edge5" class="edge">
+<title>4-&gt;5</title>
+<path fill="none" stroke="#94a3b8" stroke-width="1.5" d="M105.49,-375.18C105.49,-375.18 105.49,-328.05 105.49,-328.05"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" stroke-width="1.5" points="108.29,-328.05 105.49,-320.05 102.69,-328.05 108.29,-328.05"/>
+</g>
+<!-- 6 -->
+<g id="node7" class="node">
+<title>6</title>
+<polygon fill="#ef4444" stroke="black" stroke-dasharray="5,2" points="155.48,-175.17 55.49,-175.17 55.49,-134.37 155.48,-134.37 155.48,-175.17"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-158.07" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Dropout</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-144.87" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 256)</text>
+</g>
+<!-- 5&#45;&gt;6 -->
+<g id="edge6" class="edge">
+<title>5-&gt;6</title>
+<path fill="none" stroke="#94a3b8" stroke-width="1.5" d="M105.49,-232.84C105.49,-232.84 105.49,-185.91 105.49,-185.91"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" stroke-width="1.5" points="108.29,-185.91 105.49,-177.91 102.69,-185.91 108.29,-185.91"/>
+</g>
+<!-- 7 -->
+<g id="node8" class="node">
+<title>7</title>
+<ellipse fill="#8b5cf6" stroke="black" cx="105.49" cy="-38.18" rx="66.81" ry="38.18"/>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-48.08" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Linear</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-34.88" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Output: (1, 10)</text>
+<text xml:space="preserve" text-anchor="middle" x="105.49" y="-21.68" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.00" fill="#ffffff">Params: 2.6K</text>
+</g>
+<!-- 6&#45;&gt;7 -->
+<g id="edge7" class="edge">
+<title>6-&gt;7</title>
+<path fill="none" stroke="#94a3b8" stroke-width="1.5" d="M105.49,-133.92C105.49,-133.92 105.49,-87.02 105.49,-87.02"/>
+<polygon fill="#94a3b8" stroke="#94a3b8" stroke-width="1.5" points="108.29,-87.02 105.49,-79.02 102.69,-87.02 108.29,-87.02"/>
+</g>
+</g>
+</svg>
