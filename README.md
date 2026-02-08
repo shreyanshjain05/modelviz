@@ -36,6 +36,13 @@
 | 📓 **Notebook-native** | Renders inline in Jupyter, Colab, and VSCode notebooks |
 | 💾 **Export** | Save as PNG, SVG, PDF, or interactive HTML |
 
+## 🖥️ Demo
+
+
+https://github.com/user-attachments/assets/4ed4c537-5d3e-45ba-a08a-cafbe57f5fbb
+
+
+
 ## 🎮 3D Visualization Preview
 
 Each layer type has a distinct, meaningful 3D representation:
