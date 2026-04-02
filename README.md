@@ -401,4 +401,8 @@ Apache 2.0 License - see [LICENSE](LICENSE) for details.
   Made with ❤️ for the deep learning community
   <br><br>
   ⭐ Star this repo if you find it useful!
+  <br><br>
+  ☕ You can also support me on Ko-fi: https://ko-fi.com/shreyanshjain05 — every coffee keeps me going!
 </p>
+
+
